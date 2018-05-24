@@ -912,7 +912,7 @@ extension FormViewController : UITableViewDelegate {
 			}
             return .none
         }
-        if section.multivaluedOptions.contains(.Insert) && indexPath.row == section.count - 1 {
+        if section.multivaluedOptions.contains(.Insert) && indexPath.row == section.count - 1 && section.showInsertIconInAddButton {
             return .insert
         }
         if section.multivaluedOptions.contains(.Delete) {
